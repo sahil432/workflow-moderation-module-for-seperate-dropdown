@@ -1,0 +1,7 @@
+name: BBB workflow
+description: Customizes workflow for BBB.
+type: module
+version: '8.x-1.x'
+core: '8.x'
+dependencies:
+  - workbench_moderation

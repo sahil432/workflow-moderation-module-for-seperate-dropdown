@@ -1,0 +1,10 @@
+services:
+  bbb_workflow.views_data:
+    class: '\Drupal\bbb_workflow\ViewsData'
+    arguments:
+      - '@entity_type.manager'
+
+  bbb_workflow.route_subscriber:
+    class: '\Drupal\bbb_workflow\Routing\RouteSubscriber'
+    tags:
+      - { name: event_subscriber }
